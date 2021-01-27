@@ -1,0 +1,675 @@
+#========================						
+#        Announcer      |
+#========================
+
+OnCommand ub brobotix0x57 1800 !bb 
+OBS SceneSource 'ChatOverlays' Brobotix on
+Delay 8
+OBS SceneSource 'ChatOverlays' Brobotix off
+
+OnCommand ub beermetal 1800 !bm 
+OBS SceneSource 'ChatOverlays' Beermetal on
+Delay 7
+OBS SceneSource 'ChatOverlays' Beermetal off
+
+OnCommand ub grayartificer 1800 !ga 
+OBS SceneSource 'ChatOverlays' Grayartificer on
+Delay 21
+OBS SceneSource 'ChatOverlays' Grayartificer off
+
+OnCommand ub gilbertsgadgets 1800 !gg 
+OBS SceneSource 'ChatOverlays' Gilbertsgadgets on
+Delay 15
+OBS SceneSource 'ChatOverlays' Gilbertsgadgets off
+
+OnCommand ub noycebru 1800 !nb 
+OBS SceneSource 'ChatOverlays' Noycebru on
+Delay 7
+OBS SceneSource 'ChatOverlays' Noycebru off
+
+OnCommand ub sarcastic_friend 1800 !sf
+OBS SceneSource 'ChatOverlays' Sarcastic_Friend on
+Delay 11
+OBS SceneSource 'ChatOverlays' Sarcastic_Friend off
+
+OnCommand ub stray_robotics 1800 !sr
+OBS SceneSource 'ChatOverlays' Strayrobotics on
+Delay 10
+OBS SceneSource 'ChatOverlays' Strayrobotics off
+
+OnCommand ub djrockinrog 1800 !dr 
+OBS SceneSource 'ChatOverlays' Djrockinrog on
+Delay 19
+OBS SceneSource 'ChatOverlays' Djrockinrog off
+
+#========================						
+#          Bits         |
+#========================
+
+#*************************** 5 - OMR WHAT ********************
+OnSLTwitchBits
+If 4 {amount} = 5
+OBS SceneSource 'BitOverlays' OMR_What on
+delay 3
+OBS SceneSource 'BitOverlays' OMR_What off
+Exit
+#*************************** 10 - BRIDGETTE THATS HOT ********
+If 4 {amount} = 10
+OBS SceneSource 'BitOverlays' Bridgette_Thatshot on
+delay 4
+OBS SceneSource 'BitOverlays' Bridgette_Thatshot off
+Exit
+#*************************** 15 - THATS HUGE ********************
+If 5 {amount} = 15
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Thatshuge' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Hugepenis' on"
+Delay 6
+OBS SceneSource 'BitOverlays' Marc_Thatshuge off 
+OBS SceneSource 'BitOverlays' Bridgette_Nobits off 
+Exit
+#***************************20 - CHESTER BLIND ********************
+If 4 {amount} = 20
+OBS SceneSource 'BitOverlays' Chester_Blind on
+delay 4
+OBS SceneSource 'BitOverlays' Chester_Blind off
+Exit
+#*************************** 22 - TIMMY HELP ********************
+If 5 {amount} = 22
+Random Equal "OBS SceneSource 'BitOverlays' 'Timmy_Smell' on" "OBS SceneSource 'BitOverlays' 'Timmy_Caniplay' on"
+Delay 14
+OBS SceneSource 'BitOverlays' Timmy_Smell off 
+OBS SceneSource 'BitOverlays' Timmy_Caniplay off 
+Exit
+#*************************** 25 - TECH SUPPORT ********************
+If 10 {amount} = 25
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Chester_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Prostate' on" "OBS SceneSource 'BitOverlays' 'OMR_Carrots' on" "OBS SceneSource 'BitOverlays' 'Timmy_Techsupport' on"
+Delay 8
+OBS SceneSource 'BitOverlays' Marc_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Techsupport off
+OBS SceneSource 'BitOverlays' Bridgette_Techsupport off
+OBS SceneSource 'BitOverlays' Timmy_Techsupport off
+OBS SceneSource 'BitOverlays' Chester_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Prostate off
+OBS SceneSource 'BitOverlays' OMR_Carrots off
+Exit
+#*************************** 28 - OMR MY NAME IS ********************
+If 4 {amount} = 28
+OBS SceneSource 'BitOverlays' OMR_Mynameis on
+delay 13
+OBS SceneSource 'BitOverlays' OMR_Mynameis off
+Exit
+#*************************** 30 - TIER 1 TAUNTS - SUBTLE ********************
+If 8 {amount} = 30
+Random Equal "OBS SceneSource 'BitOverlays' 'Bridgette_Bettergirl' on" "OBS SceneSource 'BitOverlays' 'OMR_Terrible' on" "OBS SceneSource 'BitOverlays' 'OMR_Youarebad' on" "OBS SceneSource 'BitOverlays' 'OMR_Bad' on" "OBS SceneSource 'BitOverlays' 'Marc_Terrible' on" 
+Delay 10
+OBS SceneSource 'BitOverlays' Bridgette_Bettergirl off
+OBS SceneSource 'BitOverlays' Marc_Terrible off
+OBS SceneSource 'BitOverlays' OMR_Terrible off
+OBS SceneSource 'BitOverlays' OMR_Youarebad off
+OBS SceneSource 'BitOverlays' OMR_Bad off
+Exit
+#************************** 30 - OMR STUPIDITY ********************
+If 5 {amount} = 32
+Random Equal "OBS SceneSource 'BitOverlays' 'OMR_Watchme' on" "OBS SceneSource 'BitOverlays' 'OMR_Fallen' on" 
+Delay 16
+OBS SceneSource 'BitOverlays' OMR_Watchme off
+OBS SceneSource 'BitOverlays' OMR_Fallen off
+Exit
+#*************************** 34 - MARC LYRICS ********************
+If 7 {amount} = 34
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Embolism' on" "OBS SceneSource 'BitOverlays' 'Marc_Rectal' on" "OBS SceneSource 'BitOverlays' 'Marc_Flowers' on" "OBS SceneSource 'BitOverlays' 'Marc_Prettylady' on"
+Delay 5
+OBS SceneSource 'BitOverlays' Marc_Embolism off
+OBS SceneSource 'BitOverlays' Marc_Rectal off
+OBS SceneSource 'BitOverlays' Marc_Flowers off
+OBS SceneSource 'BitOverlays' Marc_Prettylady off
+Exit
+#*************************** 35 - LIL BITCH ********************
+If 10 {amount} = 35
+Random Equal "OBS SceneSource 'BitOverlays' 'Timmy_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Marc_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Chester_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'All_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Timmy_Whatsalilbitch' on" "OBS SceneSource 'BitOverlays' 'OMR_Lilbitch' on"
+Delay 11
+OBS SceneSource 'BitOverlays' Timmy_Lilbitch off
+OBS SceneSource 'BitOverlays' Marc_Lilbitch off
+OBS SceneSource 'BitOverlays' Chester_Lilbitch off
+OBS SceneSource 'BitOverlays' OMR_Lilbitch off
+OBS SceneSource 'BitOverlays' Bridgette_Lilbitch off
+OBS SceneSource 'BitOverlays' All_Lilbitch off
+OBS SceneSource 'BitOverlays' Timmy_Whatsalilbitch off
+Exit
+#*************************** 36 - BRIDGETTE THOT ********************
+If 4 {amount} = 36
+OBS SceneSource 'BitOverlays' Bridgette_Thot on
+delay 9
+OBS SceneSource 'BitOverlays' Bridgette_Thot off
+Exit
+#*************************** 40 - TIMMY SWEARS ********************
+If 5 {amount} = 40
+Random Equal "OBS SceneSource 'BitOverlays' 'Timmy_FtardCensored' on" "OBS SceneSource 'BitOverlays' 'Timmy_Jebus' on"
+Delay 9
+OBS SceneSource 'BitOverlays' Timmy_FtardCensored off 
+OBS SceneSource 'BitOverlays' Timmy_Jebus off
+Exit
+#*************************** 46 - CHESTER RAGE ********************
+If 4 {amount} = 46
+OBS SceneSource 'BitOverlays' Chester_Rage on
+delay 8
+OBS SceneSource 'BitOverlays' Chester_Rage off
+Exit
+#*************************** 46 - MARC HANGOUT ********************
+If 4 {amount} = 48
+OBS SceneSource 'BitOverlays' Marc_Hangout on
+delay 9
+OBS SceneSource 'BitOverlays' Marc_Hangout off
+Exit
+#*************************** 50 - FART ********************
+If 11 {amount} = 50
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Fart' on" "OBS SceneSource 'BitOverlays' 'Chester_Fart' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Fart' on" "OBS SceneSource 'BitOverlays' 'Chester_Fartbomb' on" "OBS SceneSource 'BitOverlays' 'OMR_Fart' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingeraccident' on" "OBS SceneSource 'BitOverlays' 'Timmy_Fart' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingernothing' on"
+Delay 16
+OBS SceneSource 'BitOverlays' Marc_Fart off
+OBS SceneSource 'BitOverlays' Chester_Fart off
+OBS SceneSource 'BitOverlays' Bridgette_Fart off
+OBS SceneSource 'BitOverlays' Timmy_Fart off
+OBS SceneSource 'BitOverlays' Chester_Fartbomb off
+OBS SceneSource 'BitOverlays' OMR_Fart off
+OBS SceneSource 'BitOverlays' OMR_Pullfingeraccident off
+OBS SceneSource 'BitOverlays' OMR_Pullfingernothing off
+Exit
+#*************************** 52 - BRIDGETTE COMPLAIN ********************
+If 4 {amount} = 52
+OBS SceneSource 'BitOverlays' Bridgette_Complaindick on
+delay 6
+OBS SceneSource 'BitOverlays' Bridgette_Complaindick off
+Exit
+#*************************** 60 - TIER 2 TAUNTS - MEAN ********************
+If 13 {amount} = 60
+Random Equal "OBS SceneSource 'BitOverlays' 'Chester_Notgood' on" "OBS SceneSource 'BitOverlays' 'Chester_Breath' on" "OBS SceneSource 'BitOverlays' 'Chester_Menopause' on" "OBS SceneSource 'BitOverlays' 'OMR_Notgoodgameplay' on" "OBS SceneSource 'BitOverlays' 'OMR_Bettermoves' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingeraccident' on" "OBS SceneSource 'BitOverlays' 'OMR_Easymode' on" "OBS SceneSource 'BitOverlays' 'Marc_Toohard' on" "OBS SceneSource 'BitOverlays' 'Chester_Madbro' on" "OBS SceneSource 'BitOverlays' 'Marc_Roblox' on"
+Delay 8
+OBS SceneSource 'BitOverlays' Chester_Notgood off
+OBS SceneSource 'BitOverlays' Marc_Fart off
+OBS SceneSource 'BitOverlays' Chester_Breath off
+OBS SceneSource 'BitOverlays' Chester_Menopause off
+OBS SceneSource 'BitOverlays' OMR_Easymode off
+OBS SceneSource 'BitOverlays' OMR_Notgoodgameplay off
+OBS SceneSource 'BitOverlays' OMR_Bettermoves off
+OBS SceneSource 'BitOverlays' Marc_Toohard off
+OBS SceneSource 'BitOverlays' Chester_Madbro off
+OBS SceneSource 'BitOverlays' Marc_Roblox off
+Exit
+#*************************** 80 - TIMMY SICK ********************
+If 5 {amount} = 80
+Random Equal "OBS SceneSource 'BitOverlays' 'Timmy_Sick1' on" "OBS SceneSource 'BitOverlays' 'Timmy_Sickfront' on" 
+Delay 13
+OBS SceneSource 'BitOverlays' Timmy_Sick1 off
+OBS SceneSource 'BitOverlays' Timmy_Sickfront off
+Exit
+#*************************** 90 - TIER 3 TAUNTS - NASTY ********************
+If 9 {amount} = 90
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Kidsgame' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Youareshit' on" "OBS SceneSource 'BitOverlays' 'OMR_Pooppersonality' on" "OBS SceneSource 'BitOverlays' 'OMR_Notgoodgameplay' on" "OBS SceneSource 'BitOverlays' 'OMR_Mother' on" "OBS SceneSource 'BitOverlays' 'Marc_Toohard' on" "OBS SceneSource 'BitOverlays' 'OMR_Adopted' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Fixlighting' on"
+Delay 8
+OBS SceneSource 'BitOverlays' Marc_Kidsgame off
+OBS SceneSource 'BitOverlays' Bridgette_Fixlighting off
+OBS SceneSource 'BitOverlays' Bridgette_Youareshit off
+OBS SceneSource 'BitOverlays' OMR_Pooppersonality off
+OBS SceneSource 'BitOverlays' OMR_Mother off
+OBS SceneSource 'BitOverlays' OMR_Adopted off
+Exit
+#*************************** 100 - MILKSHAKES ********************
+If 4 {amount} = 100
+OBS SceneSource 'BitOverlays' DUO_Milkshakes on
+delay 9
+OBS SceneSource 'BitOverlays' DUO_Milkshakes off
+Exit
+#*************************** 120 - CHESTER SMELL FINGER ********************
+If 4 {amount} = 120
+OBS SceneSource 'BitOverlays' Chester_Smellfinger on
+delay 9
+OBS SceneSource 'BitOverlays' Chester_Smellfinger off
+Exit
+#*************************** 140 - CHESTER THREATENS ********************
+If 4 {amount} = 140
+OBS SceneSource 'BitOverlays' Chester_Knuckle on
+delay 12
+OBS SceneSource 'BitOverlays' Chester_Knuckle off
+Exit
+#*************************** 150 - STOP LOOKING AT MY BOOBS / SLAP ********************
+If 4 {amount} = 150
+OBS SceneSource 'BitOverlays' DUO_Stopboobs on
+delay 21
+OBS SceneSource 'BitOverlays' DUO_Stopboobs off
+Exit
+#*************************** 300 - BRIDGETTE NUDE ********************
+If 4 {amount} = 300
+OBS SceneSource 'BitOverlays' Bridgette_Nude on
+delay 24
+OBS SceneSource 'BitOverlays' Bridgette_Nude off
+Exit
+#********************TTS REAPER***************************************
+If 4 {amount} >= 350
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' on
+Delay 10
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' off
+Exit
+#************************** NOT ON THE MENU *****************
+If 8 {amount} != 5 and {amount} != 10 and {amount} != 15 and {amount} != 20 and {amount} != 22 and {amount} != 28 and {amount} != 30 and {amount} != 32 and {amount} != 34 and {amount} != 35 and {amount} != 36 and {amount} != 38 and {amount} != 40 and {amount} != 46 and {amount} != 48 and {amount} != 50 and {amount} != 52 and {amount} != 55 and {amount} != 60 and {amount} != 80 and {amount} != 90 and {amount} != 100 and {amount} != 120 and {amount} != 140 and {amount} != 150 and {amount} != 300 and {amount} != 350 and {amount} <= 350
+Random Equal "OBS SceneSource 'BitOverlays' 'Chester_Nobits' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Nobits' on" "OBS SceneSource 'BitOverlays' 'Marc_Nobits' on" "OBS SceneSource 'BitOverlays' 'OMR_Nobits' on" "OBS SceneSource 'BitOverlays' 'Timmy_Nobits' on"
+Delay 17
+OBS SceneSource 'BitOverlays' Chester_Nobits off 
+OBS SceneSource 'BitOverlays' Bridgette_Nobits off 
+OBS SceneSource 'BitOverlays' Marc_Nobits off 
+OBS SceneSource 'BitOverlays' OMR_Nobits off
+OBS SceneSource 'BitOverlays' Timmy_Nobits off
+Exit
+
+#========================						
+#    Channel Points     |
+#========================
+
+OnChannelPoint "StreamerView"
+OBS CurrentScene current_scene
+OBS Scene 4Monitors
+Delay 5
+OBS Scene {current_scene}
+
+OnChannelPoint "Suggest Tech Support"
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Chester_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Prostate' on" "OBS SceneSource 'BitOverlays' 'OMR_Carrots' on" "OBS SceneSource 'BitOverlays' 'Timmy_Techsupport' on"
+Delay 8
+OBS SceneSource 'BitOverlays' Marc_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Techsupport off
+OBS SceneSource 'BitOverlays' Bridgette_Techsupport off
+OBS SceneSource 'BitOverlays' Timmy_Techsupport off
+OBS SceneSource 'BitOverlays' Chester_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Prostate off
+OBS SceneSource 'BitOverlays' OMR_Carrots off
+Exit
+
+OnChannelPoint "Call Kevin A Tool"
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Chester_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Timmy_Kevtool' on" "OBS SceneSource 'BitOverlays' 'ALL_Kevtool' on" "OBS SceneSource 'BitOverlays' 'OMR_Kevtool' on"
+Delay 4
+OBS SceneSource 'BitOverlays' Marc_Kevtool off
+OBS SceneSource 'BitOverlays' Bridgette_Kevtool off
+OBS SceneSource 'BitOverlays' Chester_Kevtool off
+OBS SceneSource 'BitOverlays' OMR_Kevtool off
+OBS SceneSource 'BitOverlays' Timmy_Kevtool off
+OBS SceneSource 'BitOverlays' ALL_Kevtool off
+Exit
+
+OnChannelPoint "Swear At Kevin"
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_FUKev' on" "OBS SceneSource 'BitOverlays' 'Bridgette_FUKev' on" "OBS SceneSource 'BitOverlays' 'Chester_FUKev' on" "OBS SceneSource 'BitOverlays' 'Timmy_FUKev' on" "OBS SceneSource 'BitOverlays' 'ALL_FUKev' on" "OBS SceneSource 'BitOverlays' 'OMR_FUKev' on"
+Delay 11
+OBS SceneSource 'BitOverlays' Marc_FUKev off
+OBS SceneSource 'BitOverlays' Bridgette_FUKev off
+OBS SceneSource 'BitOverlays' Chester_FUKev off
+OBS SceneSource 'BitOverlays' OMR_FUKev off
+OBS SceneSource 'BitOverlays' Timmy_FUKev off
+OBS SceneSource 'BitOverlays' ALL_FUKev off
+Exit
+
+OnChannelPoint "Use Me On Game Death"
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Death' on" "OBS SceneSource 'BitOverlays' 'Marc_Death' on" 
+Delay 3
+OBS SceneSource 'BitOverlays' Marc_Death off
+OBS SceneSource 'BitOverlays' Marc_Death off
+Exit
+
+
+OnChannelPoint "Did Someone Mention Lady Pillows?"
+Random Equal "OBS SceneSource 'BitOverlays' 'Bridgette_Stoptits' on" "OBS SceneSource 'BitOverlays' 'Chester_Sawaboob' on" "OBS SceneSource 'BitOverlays' 'Marc_Saytits' on" "OBS SceneSource 'BitOverlays' 'Multi_Stoptits' on" "OBS SceneSource 'BitOverlays' 'Chester_Saytits' on"
+Delay 14
+OBS SceneSource 'BitOverlays' Bridgette_Stoptits off
+OBS SceneSource 'BitOverlays' Chester_Saytits off
+OBS SceneSource 'BitOverlays' Chester_Sawaboob off
+OBS SceneSource 'BitOverlays' Marc_Saytits off
+OBS SceneSource 'BitOverlays' Multi_Stoptits off
+Exit
+
+OnChannelPoint "Past This Bit"
+Random Equal "OBS SceneSource 'BitOverlays' 'Chester_Pastthisbit' on" "OBS SceneSource 'BitOverlays' 'Chester_Grandma' on" "OBS SceneSource 'BitOverlays' 'Timmy_Pastthisbit' on"
+Delay 10
+OBS SceneSource 'BitOverlays' Chester_Pastthisbit off
+OBS SceneSource 'BitOverlays' Chester_Grandma off
+OBS SceneSource 'BitOverlays' Timmy_Pastthisbit off
+Exit
+
+
+OnChannelPoint "Cast into the Void"
+OBS SceneSource 'ChatOverlays' VoidWarning on
+Delay 5
+OBS SceneSource 'ChatOverlays' VoidWarning off
+OBS SceneSource 'ChatOverlays' Void on
+OBS Source 'ATUSBMIC' Filter Echo on
+OBS Source 'CraftMic' Filter Echo on
+OBS Source 'LTSmall' Filter Blur on
+Delay 8
+OBS Source 'ATUSBMIC' Filter Echo off
+OBS Source 'CraftMic' Filter Echo off
+OBS Source 'LTSmall' Filter Blur off
+OBS SceneSource 'ChatOverlays' Void off
+
+
+OnChannelPoint "GTA Wasted"
+OBS Source 'Display Capture' Filter B&W on
+OBS Source 'LTSmall' Filter B&W on
+OBS Source 'iPhone5' Filter B&W on
+OBS Source 'Panasonic' Filter B&W on
+OBS SceneSource 'ChatOverlays' Wasted on
+delay 12
+OBS SceneSource 'ChatOverlays' Wasted off
+OBS Source 'Display Capture' Filter B&W off
+OBS Source 'LTSmall' Filter B&W off
+OBS Source 'iPhone5' Filter B&W off
+OBS Source 'Panasonic' Filter B&W off
+
+OnChannelPoint "Choose a door, win a prize?"
+OBS SceneSource 'ChatOverlays' Door_Redeem on
+delay 10
+OBS SceneSource 'ChatOverlays' Door_Redeem off
+delay 100
+
+OnChannelPoint "Fart"
+Random Equal "Play 100 wait fart1.mp3" "Play 100 wait fart2.mp3" "Play 100 wait fart3.mp3" "Play 100 wait fart4.mp3" "Play 100 wait fart5.mp3" "Play 100 wait fart6.mp3"
+Delay 10
+
+OnChannelPoint "Zoom"
+OBS CurrentScene current_scene
+if 4 {current_scene} = "PC"
+OBS Scene PCZoom
+delay 3
+OBS Scene PC
+if 4 {current_scene} != "PC"
+OBS SceneSource 'ChatOverlays' 'Timmy_Fly' on
+delay 2
+OBS SceneSource 'ChatOverlays' 'Timmy_Fly' off
+
+#========================						
+#     Chat Commands     |
+#========================
+
+OnCommand e 10 !alerts
+Chat Send "You can find the current list of overlays to trigger below: http://shorturl.at/xPT01"
+
+OnCommand e 10 !alert
+Chat Send "You can find the current list of overlays to trigger below: http://shorturl.at/xPT01"
+
+OnCommand e 10 !projects 
+Chat Send "All my projects get updates posted on IMGUR https://imgur.com/user/disasterofpuppets/posts"
+
+OnCommand e 1 !bear
+Cooldown Check SpamCD
+If {SpamCD} = true
+Chat Send "Sorry, the bears are hibernating, It takes about five minutes to wake them again"
+
+OnCommand e 1 !bear
+Cooldown Check SpamCD
+If {SpamCD} = false
+Random Equal "OBS SceneSource 'ChatOverlays' 'Bearwalk' on" "OBS SceneSource 'ChatOverlays' 'Bearwalk2' on" "OBS SceneSource 'ChatOverlays' 'Bearwalkbot' on" "OBS SceneSource 'ChatOverlays' 'Bearwalktop' on"
+Delay 4
+Cooldown Apply SpamCD 300
+OBS SceneSource 'ChatOverlays' Bearwalk off
+OBS SceneSource 'ChatOverlays' Bearwalk2 off
+OBS SceneSource 'ChatOverlays' Bearwalkbot off
+OBS SceneSource 'ChatOverlays' Bearwalktop off
+Exit
+
+OnCommand e 1 !zombie
+Cooldown Check SpamCD
+If {SpamCD} = true
+Chat Send "Sorry, the zombies are getting their beauty sleep, It takes about five minutes to wake them again"
+
+OnCommand e 1 !zombie
+Cooldown Check SpamCD
+If {SpamCD} = false
+Random Equal "OBS SceneSource 'ChatOverlays' 'Zombie1' on" "OBS SceneSource 'ChatOverlays' 'Zombie2' on" "OBS SceneSource 'ChatOverlays' 'Zombie3' on" "OBS SceneSource 'ChatOverlays' 'Zombie4' on" "OBS SceneSource 'ChatOverlays' 'Zombie5' on" "OBS SceneSource 'ChatOverlays' 'ZombieAll' on"
+Delay 4
+Cooldown Apply SpamCD 300
+OBS SceneSource 'ChatOverlays' Zombie1 off
+OBS SceneSource 'ChatOverlays' Zombie2 off
+OBS SceneSource 'ChatOverlays' Zombie3 off
+OBS SceneSource 'ChatOverlays' Zombie4 off
+OBS SceneSource 'ChatOverlays' Zombie5 off
+OBS SceneSource 'ChatOverlays' ZombieAll off
+Exit
+
+OnCommand e 20 !bears
+Chat Send "One is enough, we don't need multiple!!! Are you trying to get mauled? remove the s"
+
+OnCommand e 1 !lurk
+Cooldown Check LERK
+if {LERK} = true
+Chat Send "Sorry, you can only Lurk once every 15 minutes"
+
+
+OnCommand e 1 !lurk
+Cooldown Check LERK
+if {LERK} = false
+Random Equal "OBS SceneSource 'ChatOverlays' 'Lurk1' on" "OBS SceneSource 'ChatOverlays'  'Lurk2' on" "OBS SceneSource 'ChatOverlays'  'Lurk3' on" "OBS SceneSource 'ChatOverlays' 'Lurk4' on"
+Chat Send "{user} is lurking in the bushes"
+OBS SceneSource 'ChatOverlays' Lurksound on
+Delay 6
+Cooldown Apply LERK 300
+OBS SceneSource 'ChatOverlays' Lurk1 off
+OBS SceneSource 'ChatOverlays' Lurk2 off
+OBS SceneSource 'ChatOverlays' Lurk3 off
+OBS SceneSource 'ChatOverlays' Lurk4 off
+OBS SceneSource 'ChatOverlays' Lurksound off
+Exit
+
+OnCommand e 4 !sup
+Cooldown Check SUPP
+if {SUPP} = true
+Chat Send "Please wait another 20 minutes before trying !sup again, Andrew is tired"
+
+OnCommand e 4 !sup
+Cooldown Check SUPP
+if {SUPP} = false
+OBS SceneSource 'ChatOverlays' Sup on
+delay 14
+OBS SceneSource 'ChatOverlays' Sup off
+Cooldown Apply SUPP 1200
+
+
+#========================						
+#        Donations      |
+#========================
+
+OnSLDonation
+If 10 {amount} <= 49
+Random Equal "OBS SceneSource 'AlertOverlays' 'Chester_Donationdance' on" "OBS SceneSource 'AlertOverlays' 'Bridgette_Donation' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Tydono' on" "OBS SceneSource 'AlertOverlays' 'OMR_Tydono' on"
+Delay 11
+OBS SceneSource 'AlertOverlays' 'Chester_Donationdance' off
+OBS SceneSource 'AlertOverlays' 'Bridgette_Donation' off
+OBS SceneSource 'AlertOverlays' 'Timmy_Tydono' off
+OBS SceneSource 'AlertOverlays' 'OMR_Tydono' off
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' on
+Delay 10
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' off
+Exit
+#***************** LARGE DONATION *************
+OnSLDonation
+If 13 {amount} >= 50
+Random Equal "OBS SceneSource 'AlertOverlays' 'Marc_Ldonodrugs' on" "OBS SceneSource 'AlertOverlays' 'Marc_Ldonoty' on" "OBS SceneSource 'AlertOverlays' 'Chester_Ldonationporno' on" "OBS SceneSource 'AlertOverlays' 'Chester_Largedono' on" "OBS SceneSource 'AlertOverlays' 'OMR_Ldonomeds' on" "OBS SceneSource 'AlertOverlays' 'Bridgette_Hugedonation' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Ldono' on"
+Delay 13
+OBS SceneSource 'AlertOverlays' 'Marc_Ldonodrugs' off
+OBS SceneSource 'AlertOverlays' 'Marc_Ldonoty' off
+OBS SceneSource 'AlertOverlays' 'Chester_Ldonationporno' off
+OBS SceneSource 'AlertOverlays' 'Chester_Largedono' off
+OBS SceneSource 'AlertOverlays' 'Bridgette_Hugedonation' off
+OBS SceneSource 'AlertOverlays' 'Timmy_Ldono' off
+OBS SceneSource 'AlertOverlays' 'OMR_Ldonomeds' off
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' on
+Delay 10
+OBS SceneSource 'iPhone5' 'iPhone5iVcam' off
+Exit
+
+#========================						
+#        Follows        |
+#========================
+
+OnSLTwitchFollow
+Random Equal "OBS SceneSource 'AlertOverlays' 'Chester_Follow' on" "OBS SceneSource 'AlertOverlays' 'Bridgette_Follow' on" "OBS SceneSource 'AlertOverlays' 'OMR_Followcreep' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Follow' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Oneofus' on" "OBS SceneSource 'AlertOverlays' 'Chester_Oneofus' on" "OBS SceneSource 'AlertOverlays' 'Bridgette_Oneofus' on" "OBS SceneSource 'AlertOverlays' 'Marc_Oneofus' on" "OBS SceneSource 'AlertOverlays' 'OMR_Oneofus' on" "OBS SceneSource 'AlertOverlays' 'Marc_Follow' on" "OBS SceneSource 'AlertOverlays' 'All_Oneofus' on" 
+Delay 11
+OBS SceneSource 'AlertOverlays' Chester_Follow off
+OBS SceneSource 'AlertOverlays' Bridgette_Follow off
+OBS SceneSource 'AlertOverlays' OMR_Followcreep off
+OBS SceneSource 'AlertOverlays' Timmy_Follow off
+OBS SceneSource 'AlertOverlays' Timmy_Oneofus off
+OBS SceneSource 'AlertOverlays' Chester_Oneofus off
+OBS SceneSource 'AlertOverlays' Bridgette_Oneofus off
+OBS SceneSource 'AlertOverlays' Marc_Oneofus off
+OBS SceneSource 'AlertOverlays' OMR_Oneofus off
+OBS SceneSource 'AlertOverlays' Marc_Follow off
+OBS SceneSource 'AlertOverlays' All_Oneofus off
+Exit
+
+#========================						
+#       Subscriber      |
+#========================
+
+#************* TIER 3 SUB ************
+OnSLTwitchSub
+If 5 {tier} = "Tier 3"
+Chat Send " disast23Hi disast23Hi {user} has subbed with Tier 3. Let's get some Tier 3 Hype in chat!! disast23Hi disast23Hi"
+OBS SceneSource 'AlertOverlays' Tier3 on
+delay 26
+OBS SceneSource 'AlertOverlays' Tier3 off
+Exit
+#***************** NEW SUB ***********
+If 11 {months} <= 1
+Chat Send "disast23Hi disast23Hi {user} has become a puppet. Sub Hype in chat!! disast23Hi disast23Hi"
+Random Equal "OBS SceneSource 'AlertOverlays' 'Bridgette_Tysub' on" "OBS SceneSource 'AlertOverlays' 'Marc_Subscriber' on" "OBS SceneSource 'AlertOverlays' 'Marc_Subty' on" "OBS SceneSource 'AlertOverlays' 'Chester_Sicksub' on" "OBS SceneSource 'AlertOverlays' 'Chester_Subscription' on" "OBS SceneSource 'AlertOverlays' 'OMR_Submarine' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Subnude' on"
+Delay 13
+OBS SceneSource 'AlertOverlays' Bridgette_Tysub off
+OBS SceneSource 'AlertOverlays' Chester_Subscription off
+OBS SceneSource 'AlertOverlays' Marc_Subscriber off
+OBS SceneSource 'AlertOverlays' Marc_Subty off
+OBS SceneSource 'AlertOverlays' Chester_Sicksub off
+OBS SceneSource 'AlertOverlays' OMR_Submarine off
+OBS SceneSource 'AlertOverlays' Timmy_Subnude off
+Exit
+#***************** RESUB ***********
+If 14 {months} >= 2
+Chat Send "disast23Hi disast23Hi {user} has renewed their sub. disast23Hi disast23Hi"
+Random Equal "OBS SceneSource 'AlertOverlays' 'Bridgette_Resub2' on" "OBS SceneSource 'AlertOverlays' 'Marc_Resubtastic' on" "OBS SceneSource 'AlertOverlays' 'Marc_Resub' on" "OBS SceneSource 'AlertOverlays' 'Bridgette_Resub' on" "OBS SceneSource 'AlertOverlays' 'Chester_Resub1' on" "OBS SceneSource 'AlertOverlays' 'Timmy_Resub' on" "OBS SceneSource 'AlertOverlays' 'OMR_Resub1' on" "OBS SceneSource 'AlertOverlays' 'OMR_Resub2' on" "OBS SceneSource 'AlertOverlays' 'OMR_Resub3' on"
+Delay 13
+OBS SceneSource 'AlertOverlays' Bridgette_Resub2 off
+OBS SceneSource 'AlertOverlays' Chester_Resub1 off
+OBS SceneSource 'AlertOverlays' Marc_Resubtastic off
+OBS SceneSource 'AlertOverlays' Chester_Sicksub off
+OBS SceneSource 'AlertOverlays' Bridgette_Resub off
+OBS SceneSource 'AlertOverlays' Marc_Resub off
+OBS SceneSource 'AlertOverlays' Timmy_Resub off
+OBS SceneSource 'AlertOverlays' OMR_Resub1 off
+OBS SceneSource 'AlertOverlays' OMR_Resub2 off
+OBS SceneSource 'AlertOverlays' OMR_Resub3 off
+Exit
+
+
+#*************** GIFT SUB ************
+OnSETwitchGiftSub
+OBS SceneSource 'AlertOverlays' Gifted on
+Delay 9
+OBS SceneSource 'AlertOverlays' Gifted off
+
+#========================						
+#        Puppets        |
+#========================
+
+OnTimer Rndoverlay 900 0
+Random Equal "OBS SceneSource 'BitOverlays' 'Marc_Thatshuge' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Hugepenis' on" "OBS SceneSource 'BitOverlays' 'OMR_What' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Thatshot' on" "OBS SceneSource 'BitOverlays' 'Chester_Blind' on" "OBS SceneSource 'BitOverlays' 'Timmy_Smell' on"  "OBS SceneSource 'BitOverlays' 'Timmy_Caniplay' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Itworked' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Worked2' on" "OBS SceneSource 'BitOverlays' 'Chester_Worked' on" "OBS SceneSource 'BitOverlays' 'Marc_Worked' on" "OBS SceneSource 'BitOverlays' 'Timmy_Itworked' on" "OBS SceneSource 'BitOverlays' 'OMR_Worked' on" "OBS SceneSource 'BitOverlays' 'Marc_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Techsupport' on" "OBS SceneSource 'BitOverlays' 'Chester_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Prostate' on" "OBS SceneSource 'BitOverlays' 'OMR_Carrots' on" "OBS SceneSource 'BitOverlays' 'Timmy_Techsupport' on" "OBS SceneSource 'BitOverlays' 'OMR_Mynameis' on" "OBS SceneSource 'BitOverlays' 'Chester_Pastthisbit' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Bettergirl' on" "OBS SceneSource 'BitOverlays' 'Chester_Grandma' on" "OBS SceneSource 'BitOverlays' 'OMR_Terrible' on" "OBS SceneSource 'BitOverlays' 'OMR_Youarebad' on" "OBS SceneSource 'BitOverlays' 'OMR_Bad' on" "OBS SceneSource 'BitOverlays' 'Marc_Terrible' on" "OBS SceneSource 'BitOverlays' 'Timmy_Pastthisbit' on" "OBS SceneSource 'BitOverlays' 'OMR_Watchme' on" "OBS SceneSource 'BitOverlays' 'OMR_Fallen' on" "OBS SceneSource 'BitOverlays' 'Marc_Embolism' on" "OBS SceneSource 'BitOverlays' 'Marc_Rectal' on" "OBS SceneSource 'BitOverlays' 'Marc_Flowers' on" "OBS SceneSource 'BitOverlays' 'Marc_Prettylady' on" "OBS SceneSource 'BitOverlays' 'Timmy_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Marc_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Chester_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'All_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Timmy_Whatsalilbitch' on" "OBS SceneSource 'BitOverlays' 'OMR_Lilbitch' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Thot' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Finger' on" "OBS SceneSource 'BitOverlays' 'Timmy_FtardCensored' on" "OBS SceneSource 'BitOverlays' 'Timmy_Jebus' on" "OBS SceneSource 'BitOverlays' 'Marc_FUKev' on" "OBS SceneSource 'BitOverlays' 'Bridgette_FUKev' on" "OBS SceneSource 'BitOverlays' 'Chester_FUKev' on" "OBS SceneSource 'BitOverlays' 'Timmy_FUKev' on" "OBS SceneSource 'BitOverlays' 'ALL_FUKev' on" "OBS SceneSource 'BitOverlays' 'OMR_FUKev' on" "OBS SceneSource 'BitOverlays' 'Chester_Rage' on" "OBS SceneSource 'BitOverlays' 'Marc_Hangout' on" "OBS SceneSource 'BitOverlays' 'Marc_Fart' on" "OBS SceneSource 'BitOverlays' 'Chester_Fart' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Fart' on" "OBS SceneSource 'BitOverlays' 'Chester_Fartbomb' on" "OBS SceneSource 'BitOverlays' 'OMR_Fart' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingeraccident' on" "OBS SceneSource 'BitOverlays' 'Timmy_Fart' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingernothing' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Complaindick' on" "OBS SceneSource 'BitOverlays' 'Marc_Death' on" "OBS SceneSource 'BitOverlays' 'Chester_Notgood' on" "OBS SceneSource 'BitOverlays' 'Chester_Breath' on" "OBS SceneSource 'BitOverlays' 'Chester_Menopause' on" "OBS SceneSource 'BitOverlays' 'OMR_Notgoodgameplay' on" "OBS SceneSource 'BitOverlays' 'OMR_Bettermoves' on" "OBS SceneSource 'BitOverlays' 'OMR_Pullfingeraccident' on" "OBS SceneSource 'BitOverlays' 'OMR_Easymode' on" "OBS SceneSource 'BitOverlays' 'Marc_Toohard' on" "OBS SceneSource 'BitOverlays' 'Chester_Madbro' on" "OBS SceneSource 'BitOverlays' 'Marc_Roblox' on" "OBS SceneSource 'BitOverlays' 'Marc_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Chester_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Timmy_Kevtool' on" "OBS SceneSource 'BitOverlays' 'ALL_Kevtool' on" "OBS SceneSource 'BitOverlays' 'OMR_Kevtool' on" "OBS SceneSource 'BitOverlays' 'Timmy_Sick1' on" "OBS SceneSource 'BitOverlays' 'Timmy_Sickfront' on" "OBS SceneSource 'BitOverlays' 'Marc_Kidsgame' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Youareshit' on" "OBS SceneSource 'BitOverlays' 'OMR_Pooppersonality' on" "OBS SceneSource 'BitOverlays' 'OMR_Notgoodgameplay' on" "OBS SceneSource 'BitOverlays' 'OMR_Mother' on" "OBS SceneSource 'BitOverlays' 'Marc_Toohard' on" "OBS SceneSource 'BitOverlays' 'OMR_Adopted' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Fixlighting' on" "OBS SceneSource 'BitOverlays' 'DUO_Milkshakes' on" "OBS SceneSource 'BitOverlays' 'Chester_Smellfinger' on" "OBS SceneSource 'BitOverlays' 'Chester_Knuckle' on" "OBS SceneSource 'BitOverlays' 'DUO_Stopboobs' on" "OBS SceneSource 'BitOverlays' 'Bridgette_Stoptits' on" "OBS SceneSource 'BitOverlays' 'Chester_Sawaboob' on" "OBS SceneSource 'BitOverlays' 'Marc_Saytits' on" "OBS SceneSource 'BitOverlays' 'OMR_Notgoodgameplay' on" "OBS SceneSource 'BitOverlays' 'Multi_Stoptits' on" "OBS SceneSource 'BitOverlays' 'Chester_Saytits' on" 
+delay 30
+OBS SceneSource 'BitOverlays' Marc_Thatshuge off 
+OBS SceneSource 'BitOverlays' Bridgette_Nobits off 
+OBS SceneSource 'BitOverlays' OMR_What off
+OBS SceneSource 'BitOverlays' Bridgette_Thatshot off
+OBS SceneSource 'BitOverlays' Chester_Blind off
+OBS SceneSource 'BitOverlays' Timmy_Smell off 
+OBS SceneSource 'BitOverlays' Timmy_Caniplay off 
+OBS SceneSource 'BitOverlays' Bridgette_Itworked off 
+OBS SceneSource 'BitOverlays' Bridgette_Worked2 off 
+OBS SceneSource 'BitOverlays' Chester_Worked off 
+OBS SceneSource 'BitOverlays' Marc_Worked off 
+OBS SceneSource 'BitOverlays' Timmy_Itworked off 
+OBS SceneSource 'BitOverlays' OMR_Worked off 
+OBS SceneSource 'BitOverlays' Marc_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Techsupport off
+OBS SceneSource 'BitOverlays' Bridgette_Techsupport off
+OBS SceneSource 'BitOverlays' Timmy_Techsupport off
+OBS SceneSource 'BitOverlays' Chester_Techsupport off
+OBS SceneSource 'BitOverlays' OMR_Prostate off
+OBS SceneSource 'BitOverlays' OMR_Carrots off
+OBS SceneSource 'BitOverlays' OMR_Mynameis off
+OBS SceneSource 'BitOverlays' Chester_Pastthisbit off
+OBS SceneSource 'BitOverlays' Bridgette_Bettergirl off
+OBS SceneSource 'BitOverlays' Chester_Grandma off
+OBS SceneSource 'BitOverlays' Marc_Terrible off
+OBS SceneSource 'BitOverlays' OMR_Terrible off
+OBS SceneSource 'BitOverlays' OMR_Youarebad off
+OBS SceneSource 'BitOverlays' OMR_Bad off
+OBS SceneSource 'BitOverlays' Timmy_Pastthisbit off
+OBS SceneSource 'BitOverlays' OMR_Watchme off
+OBS SceneSource 'BitOverlays' OMR_Fallen off
+OBS SceneSource 'BitOverlays' Marc_Embolism off
+OBS SceneSource 'BitOverlays' Marc_Rectal off
+OBS SceneSource 'BitOverlays' Marc_Flowers off
+OBS SceneSource 'BitOverlays' Marc_Prettylady off
+OBS SceneSource 'BitOverlays' Timmy_Lilbitch off
+OBS SceneSource 'BitOverlays' Marc_Lilbitch off
+OBS SceneSource 'BitOverlays' Chester_Lilbitch off
+OBS SceneSource 'BitOverlays' OMR_Lilbitch off
+OBS SceneSource 'BitOverlays' Bridgette_Lilbitch off
+OBS SceneSource 'BitOverlays' All_Lilbitch off
+OBS SceneSource 'BitOverlays' Timmy_Whatsalilbitch off
+OBS SceneSource 'BitOverlays' Bridgette_Thot off
+OBS SceneSource 'BitOverlays' Bridgette_Finger off
+OBS SceneSource 'BitOverlays' Timmy_FtardCensored off 
+OBS SceneSource 'BitOverlays' Timmy_Jebus off
+OBS SceneSource 'BitOverlays' Marc_FUKev off
+OBS SceneSource 'BitOverlays' Bridgette_FUKev off
+OBS SceneSource 'BitOverlays' Chester_FUKev off
+OBS SceneSource 'BitOverlays' OMR_FUKev off
+OBS SceneSource 'BitOverlays' Timmy_FUKev off
+OBS SceneSource 'BitOverlays' ALL_FUKev off
+OBS SceneSource 'BitOverlays' Chester_Rage off
+OBS SceneSource 'BitOverlays' Marc_Hangout off
+OBS SceneSource 'BitOverlays' Marc_Fart off
+OBS SceneSource 'BitOverlays' Chester_Fart off
+OBS SceneSource 'BitOverlays' Bridgette_Fart off
+OBS SceneSource 'BitOverlays' Timmy_Fart off
+OBS SceneSource 'BitOverlays' Chester_Fartbomb off
+OBS SceneSource 'BitOverlays' OMR_Fart off
+OBS SceneSource 'BitOverlays' OMR_Pullfingeraccident off
+OBS SceneSource 'BitOverlays' OMR_Pullfingernothing off
+OBS SceneSource 'BitOverlays' Bridgette_Complaindick off
+OBS SceneSource 'BitOverlays' Marc_Death off
+OBS SceneSource 'BitOverlays' Chester_Notgood off
+OBS SceneSource 'BitOverlays' Marc_Fart off
+OBS SceneSource 'BitOverlays' Chester_Breath off
+OBS SceneSource 'BitOverlays' Chester_Menopause off
+OBS SceneSource 'BitOverlays' OMR_Easymode off
+OBS SceneSource 'BitOverlays' OMR_Notgoodgameplay off
+OBS SceneSource 'BitOverlays' OMR_Bettermoves off
+OBS SceneSource 'BitOverlays' Marc_Toohard off
+OBS SceneSource 'BitOverlays' Chester_Madbro off
+OBS SceneSource 'BitOverlays' Marc_Roblox off
+OBS SceneSource 'BitOverlays' Marc_Kevtool off
+OBS SceneSource 'BitOverlays' Bridgette_Kevtool off
+OBS SceneSource 'BitOverlays' Chester_Kevtool off
+OBS SceneSource 'BitOverlays' OMR_Kevtool off
+OBS SceneSource 'BitOverlays' Timmy_Kevtool off
+OBS SceneSource 'BitOverlays' ALL_Kevtool off
+OBS SceneSource 'BitOverlays' Timmy_Sick1 off
+OBS SceneSource 'BitOverlays' Timmy_Sickfront off
+OBS SceneSource 'BitOverlays' Marc_Kidsgame off
+OBS SceneSource 'BitOverlays' Bridgette_Fixlighting off
+OBS SceneSource 'BitOverlays' Bridgette_Youareshit off
+OBS SceneSource 'BitOverlays' OMR_Pooppersonality off
+OBS SceneSource 'BitOverlays' OMR_Mother off
+OBS SceneSource 'BitOverlays' OMR_Adopted off
+OBS SceneSource 'BitOverlays' DUO_Milkshakes off
+OBS SceneSource 'BitOverlays' Chester_Smellfinger off
+OBS SceneSource 'BitOverlays' Chester_Knuckle off
+OBS SceneSource 'BitOverlays' DUO_Stopboobs off
+OBS SceneSource 'BitOverlays' Bridgette_Stoptits off
+OBS SceneSource 'BitOverlays' Chester_Saytits off
+OBS SceneSource 'BitOverlays' Chester_Sawaboob off
+OBS SceneSource 'BitOverlays' Marc_Saytits off
+OBS SceneSource 'BitOverlays' Multi_Stoptits off
+Exit
