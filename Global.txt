@@ -383,15 +383,6 @@ OBS SceneSource 'ChatOverlays' 'Timmy_Fly' off
 #     Chat Commands     |
 #========================
 
-OnCommand e 10 !alerts
-Chat Send "You can find the current list of overlays to trigger below: http://shorturl.at/xPT01"
-
-OnCommand e 10 !alert
-Chat Send "You can find the current list of overlays to trigger below: http://shorturl.at/xPT01"
-
-OnCommand e 10 !projects 
-Chat Send "All my projects get updates posted on IMGUR https://imgur.com/user/disasterofpuppets/posts"
-
 OnCommand e 1 !bear
 Cooldown Check SpamCD
 If {SpamCD} = true

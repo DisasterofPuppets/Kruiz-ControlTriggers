@@ -1,0 +1,152 @@
+OnInit 
+Variable Set Announce 0
+
+OnCommand e 10 !alerts
+Chat Send "You can find the current list of overlays to trigger below: https://bit.ly/39RWMd2"
+
+OnCommand e 10 !alert
+Chat Send "You can find the current list of overlays to trigger below: https://bit.ly/39RWMd2"
+
+OnCommand e 10 !projects 
+Chat Send "All my projects get updates posted on IMGUR https://imgur.com/user/disasterofpuppets/posts"
+
+
+#ANTISPAM
+
+OnKeyword e 0 "Wanna become famous? Buy followers,"
+Chat Send "{user}, Thanks bro, but I'm good."
+Chat Send "/timeout {user} 1"
+
+OnKeyword e 0 "bigfollows.com"
+Chat Send "{user}, Thanks bro, but I'm good."
+Chat Send "/timeout {user} 1"
+
+OnKeyword e 0 "W͆anna b͈ecom͢e ͌fam̪ous?"
+Chat Send "{user}, Thanks bro, but I'm good."
+Chat Send "/timeout {user} 1"
+
+#Testing
+#OnCommand b 10 !text
+#OBS Source "Textbox" Text "{user} is responsible for this"
+#delay 5
+#OBS Source "Textbox" Text ""
+
+#****************************RAID ACTION*********************************
+
+OnSLTwitchRaid
+API GET https://decapi.me/twitch/game/{user}
+OBS SceneSource 'AlertOverlays' Raid on
+delay 11
+OBS SceneSource 'AlertOverlays' Raid off
+#maybe add if viewer count less than X here
+Chat Send "***"
+Chat Send 'You should go check out @{user} at https://www.Twitch.tv/{user}'
+Chat Send 'They have were last checking out {api_data}.'
+Random Equal "Chat Send 'Viewers say it's made them more attactive to hedgehogs.'" "Chat Send 'I heard they know the meaning of life...and it is not 42'" "Chat Send 'Word is they are raising an army of otters.'" "Chat Send '3/10 viewers report more stamina in the bedroom after a stream.'" "Chat Send 'Rumor is they could be a Lizard person.'"
+Chat Send "***"
+
+#*************************** TIMED COMMANDS *****************************
+OnTimer ReaperAdvert 1800 0
+OBS SceneSource 'ChatOverlays' ReaperAd on
+Delay 7
+OBS SceneSource 'ChatOverlays' ReaperAd off
+
+OnTimer Alerts 900 0
+Variable Load Announce
+if 3 {Announce} = 0
+Chat Send "don't forget to clip your favourite moments!!"
+Variable Set Announce 1
+Exit
+if 3 {Announce} = 1
+Chat Send "You can trigger the puppets to do fantastic and silly things with your bit #donations. For a list of actions type !alerts for a link to the current list. Scenes are constantly updated and now sit at over 100 different options."
+Variable Set Announce 2
+Exit
+if 3 {Announce} = 2
+Chat Send "Why not play with some of the custom commands? try !lurk !bear !zombie !sup"
+Variable Set Announce 3
+Exit
+if 3 {Announce} = 3
+Chat Send "Want to see more Puppet stuff? Twitter - https://twitter.com/DofPuppets * Youtube - http://disasterofpuppets.com"
+Variable Set Announce 4
+Exit
+if 4 {Announce} = 4
+Chat Send "These are my BTTV Emotes: Bridgette Lurk Marc Goyle Clap Saltyshower"
+Chat Send "If you are seeing the above of text you can obtain the extension here: https://betterttv.com/ "
+Variable Set Announce 5
+Exit
+if 4 {Announce} = 5
+Chat Send "Did I accidentally say something funny? You can add a quote with '!addquote' text"
+Chat Send "Or you can randomly display them using !quote"
+Variable Set Announce 1
+#********************************************* GREEN **************************
+
+OnCommand b 10 !green
+OBS Source Funky off
+Random Equal "OBS Source 'Green1' on" "OBS Source 'Green2' on" "OBS Source 'Green3' on" "OBS Source 'Green4_Bridgetterich' on" "OBS Source 'Green5_Timmy' on"
+Delay 26
+OBS Source Green1 off
+OBS Source Green2 off
+OBS Source Green3 off
+OBS Source Green4_Bridgetterich off
+OBS Source Green5_Timmy off
+OBS Source Funky on
+Exit
+
+#********************************************* BLUE **************************
+
+OnCommand b 10 !blue
+OBS Source Funky off
+Random Equal "OBS Source 'Blue1' on" "OBS Source 'Blue' on" "OBS Source 'Blue3' on" "OBS Source 'Blue_Bridgettebear' on" "OBS Source 'Blue5Toilet' on"
+Delay 21
+OBS Source Blue1 off
+OBS Source Blue2 off
+OBS Source Blue3 off
+OBS Source Blue4Bridgettebear off
+OBS Source Blue5Toilet off
+OBS Source Funky on
+Exit
+
+#********************************************* RED **************************
+
+
+OnCommand b 10 !red
+OBS Source Funky off
+Random Equal "OBS Source 'Red1' on" "OBS Source 'Red2' on" "OBS Source 'Red3Chester' on" "OBS Source 'Red4_Marcpizza' on" "OBS Source 'Red5_Marcdudes' on"
+Delay 18
+OBS Source Red1 off
+OBS Source Red2 off
+OBS Source Red3Chester off
+OBS Source Red4_Marcpizza off
+OBS Source Red5_Marcdudes off
+OBS Source Funky on
+Exit
+
+#**************** CHAT TRIGGERS ***********
+
+OnCommand e 10 !github
+Chat Send "https://github.com/DisasterofPuppets"
+
+OnCommand e 10 !Youtube
+Chat Send "Latest Youtube video - https://youtu.be/qXHMi9LrRL8"
+
+OnCommand e 10 !yt
+Chat Send "Latest Youtube video - https://youtu.be/qXHMi9LrRL8"
+
+
+#************* MISC COMMANDS *******************
+OnCommand e 20 !socials
+Chat Send "Want to see more Puppet stuff? Twitter - https://twitter.com/DofPuppets * Youtube - http://disasterofpuppets.com * TikTok - @disasterofpuppets"
+
+OnCommand e 20 !discord
+Chat Send "Come join for the memes and other high quality content. https://discord.gg/DWRnbxf"
+
+#**************************SECRET******************
+
+OnCommand b 20 !tester
+Random Equal "OBS SceneSource 'BitOverlays' 'Subliminal1' on" "OBS SceneSource 'BitOverlays' 'Subliminal2' on" "OBS SceneSource 'BitOverlays' 'Subliminal3' on" "OBS SceneSource 'BitOverlays' 'Subliminal' on"
+Delay 1
+OBS SceneSource 'BitOverlays' Subliminal1 off
+OBS SceneSource 'BitOverlays' Subliminal2 off
+OBS SceneSource 'BitOverlays' Subliminal3 off
+OBS SceneSource 'BitOverlays' Subliminal off
+Exit
